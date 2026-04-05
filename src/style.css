@@ -1,7 +1,7 @@
 /* #region basis */
 
 @font-face {
-  font-family: Avenir, sans-serif;
+  font-family: Avenir;
   src: url(Avenir.ttf);
   font-weight: 300;
 }
@@ -73,8 +73,10 @@ body {
 }
 
 .form__input:focus {
-  font-weight: bold;
-  border: none;
   outline: none;
-  color: #3d4e61;
+}
+
+.form:focus-within {
+  border-color: #3d4e61;
+  box-shadow: 0 0 0 2px rgba(61, 78, 97, 0.2);
 }
